@@ -14,7 +14,8 @@
 #     "password": "0123456789",
 # }
 
-wifi = {
-    "ssid": "<replace with WiFi SSID>",
-    "password": "<replace with WiFi password>",
+secrets = {
+    # Wi-Fi
+    "ssid": "my access point",
+    "password": "my password",
 }

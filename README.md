@@ -25,7 +25,12 @@ The following components are required for this project:
 1. [WizFi360-EVB-Pico](https://www.digikey.hk/zh/products/detail/wiznet/WIZFI360-EVB-PICO/16515823)
 2. [1.28" TFT LCD Display Module Round RGB 240 * 240 GC9A01](https://www.amazon.com/dp/B0B7TFRNN1?psc=1&ref=ppx_yo2ov_dt_b_product_details)
 
-
+---
+## Software 
+1. [RP2040 & WizFi360 Examples with MicroPython](https://github.com/Wiznet/WizFi360-EVB-Pico-MicroPython)
+2. [micropython-time](https://github.com/derekenos/micropython-time)
+3. [micropython-async queue](https://github.com/peterhinch/micropython-async/blob/master/v3/primitives/queue.py)
+4. [Pico 1Hz challenge source code](https://github.com/teamprof/github-pico-1hz-challenge)
 
 ---
 ### pins connection between WizFi360-EVB-Pico and LCD Display Module GC9A01
@@ -46,6 +51,14 @@ The following components are required for this project:
 ```
 
 
+---
+### Steps to run the demo
+1. Download the .uf2 from https://github.com/russhughes/gc9a01_mpy/tree/main/firmware/RPI_PICO
+2. Clone this repository by "git clone https://github.com/teamprof/github-pico-1hz-challenge"
+3. Edit "secret.py" with your SSID name and password
+4. Run main.py e.g. exec(open('main.py').read())  
+if everything goes smooth, you should see the following log  
+[![log-screenshot](/doc/image/log-screenshot.png)](https://github.com/teamprof/github-pico-1hz-challenge/blob/main/doc/image/log-screenshot.png)
 
 ---
 ## Software architecture
@@ -132,17 +145,21 @@ class App(PyProf):
 
 ### Please refer to source code for details
 
-### source code will be available on github by 19 Aug 2025
 
 ---
 ## Demo video 
-1. [pico-1hz-challenge: demo](https://youtube.com/shorts/82v6k3LMab8)  
-2. [Hours minutes demo](https://youtube.com/shorts/9_L3yjMmC4k)  
-3. [Seconds demo](https://youtube.com/shorts/ZjNen-49hpA)  
+1. [pico-1hz-challenge: demo](https://www.youtube.com/watch?v=D5fEQ51aty8)  
+2. [Hours minutes demo](https://www.youtube.com/watch?v=D5fEQ51aty8)  
+3. [Seconds demo](https://www.youtube.com/watch?v=D5fEQ51aty8)  
 
 ---
 
-
+### Contributions and Thanks
+Many thanks to the following authors who have developed great software and libraries.
+1. [RP2040 & WizFi360 Examples with MicroPython](https://github.com/Wiznet/WizFi360-EVB-Pico-MicroPython)
+2. [micropython-time](https://github.com/derekenos/micropython-time)
+3. [micropython-async queue](https://github.com/peterhinch/micropython-async/blob/master/v3/primitives/queue.py)
+---
 
 ### License
 - The project is licensed under GNU GENERAL PUBLIC LICENSE Version 3
